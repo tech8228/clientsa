@@ -12,6 +12,7 @@ import HomeAttendance from "./pages/homeattendance";
 import axios from "axios";
 import "bootstrap/dist/css/bootstrap.min.css";
 import RegisterStudent from "./pages/registerstudent";
+import API_URL from "./service/api";
 
 function App() {
   const [authState, setAuthState] = useState(false);
