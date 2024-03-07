@@ -18,7 +18,7 @@ function App() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3001/auth/", {
+      .get(`${API_URL}/auth/`, {
         headers: { accessToken: localStorage.getItem("accessToken") },
       })
       .then((response) => {
