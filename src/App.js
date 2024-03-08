@@ -13,6 +13,7 @@ import axios from "axios";
 import "bootstrap/dist/css/bootstrap.min.css";
 import RegisterStudent from "./pages/registerstudent";
 import API_URL from "./service/api";
+import StudentRecord from "./pages/studentrecord";
 
 function App() {
   const [authState, setAuthState] = useState(false);
@@ -78,6 +79,10 @@ function App() {
               <Route
                 path="/registerstudent/:id?"
                 element={<RegisterStudent />}
+              />
+              <Route
+                path="/studentrecord/?"
+                element={<StudentRecord />}
               />
               {/* <Route path="/job/:id" element={<SingleJob />} /> */}
               {/* <Route path="/profile" element={<Profile />} /> */}
