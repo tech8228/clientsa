@@ -27,6 +27,7 @@ function Registration() {
   let navi = useNavigate();
 
   const onSubmit = async (data) => {
+    console.log(data);
     await axios.post(`${API_URL}/auth`, data).then((response) => {
       if (response.data.error) {
         alert(response.data.error);

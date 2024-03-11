@@ -42,7 +42,7 @@ function Registration() {
       if (response.data.error) {
         console.log(response.data.error);
       } else {
-        navi("/homeattendance");
+        window.location.reload();
       }
     });
   };
